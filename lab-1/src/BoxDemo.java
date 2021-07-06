@@ -10,13 +10,13 @@ class Box {
     }
 
     Box(double w, double h, double d) {
-        height = h;
-        width = w;
-        depth = d;
+        this.height = h;
+        this.width = w;
+        this.depth = d;
     }
 
     void volume() {
-        System.out.println("Volume of the box 1 is : " + width * height * depth);
+        System.out.println("Volume of the box is : " + width * height * depth);
     }
 }
 
