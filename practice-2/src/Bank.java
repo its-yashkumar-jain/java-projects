@@ -85,7 +85,7 @@ public class Bank {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("\n\n----------------------------");
-        System.out.println("Welcome to RCOEM bank 🏦💰💰");
+        System.out.println("Welcome to ABC bank 🏦💰💰");
         System.out.println("----------------------------\n\n");
 
         System.out.println("What type of account do you want to open ?");
@@ -100,7 +100,7 @@ public class Bank {
             c1 = new current();
         }
 
-        int actionCount = 1;
+        int actionCount = 1, accountClose = 0;
         while (actionCount == 1) {
             System.out.println("\nWhat action do you want to perform ?");
             System.out.println("1. Know your balance");
@@ -109,6 +109,7 @@ public class Bank {
             System.out.println("4. Deposit money to FD");
             System.out.println("5. Withdraw money");
             System.out.println("6. Break FD");
+            System.out.println("7. Close your account");
             System.out.print("Enter choice value : ");
             int inp = sc.nextInt();
 
@@ -137,12 +138,19 @@ public class Bank {
                 case 6:
                     c1.breakFD();
                     break;
+                case 7:
+                    accountClose = 1;
+                    System.out.println("Your account has been closed!!!");
+                    break;
 
                 default:
                     System.out.println("ERROR : Invalid choice");
                     break;
             }
 
+            if (accountClose == 1) {
+                break;
+            }
             System.out.print("\nDo you want to continue ? \nEnter 1 for yes, 0 for no : ");
             actionCount = sc.nextInt();
         }
