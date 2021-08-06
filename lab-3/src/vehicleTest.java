@@ -6,7 +6,7 @@ class Vehicle {
 
 class LMV extends Vehicle {
     int seatCapacity;
-    String color;
+    String color, use;
 }
 
 class HMV extends Vehicle {
@@ -33,5 +33,6 @@ public class vehicleTest {
         twoWheeler w2 = new twoWheeler();
         fourWheeler w4 = new fourWheeler();
         truck t = new truck();
+        System.out.println("All good, No Error!");
     }
 }
