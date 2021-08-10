@@ -45,6 +45,9 @@ public class BoxStat {
         // box 2
         Box b2 = new Box(10, 1, 20);
         b2.display();
+        // box 3
+        Box b3 = new Box(4, 5.2, 6);
+        b3.display();
 
         // calling static methods
         System.out.println("\nArea of (10, 10, 10): " + Box.Area(10, 10, 10));
