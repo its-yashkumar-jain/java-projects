@@ -15,8 +15,17 @@ public class arrApp {
             arr.add(temp);
         }
 
-        System.out.println("\nArrayList: " + arr.toString());
-        Collections.sort(arr);
+        Iterator<Integer> i = arr.iterator();
+        while (i.hasNext()) {
+            System.out.print(i.next() + " ");
+        }
+
+        Collections.sort(arr, new Comparator<Integer>() {
+            public int compare(Integer o1, Integer o2) {
+                return o2.compareTo(o1);
+            }
+        });
+
         System.out.println("\nSorted ArrayList: " + arr.toString());
 
         Collections.reverse(arr);
