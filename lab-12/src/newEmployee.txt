@@ -1,0 +1,6 @@
+ID	Name	Type	Perks
+9	Harsha	P	5000
+36	Harsh	p	5000
+43	Madhav	ad	1000
+54	Jiya	p	5000
+79	Pratik	ad	1000
